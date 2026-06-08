@@ -3,36 +3,13 @@
 import Countdown from "@/components/Countdown";
 import Gallery from "@/components/Gallery";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
+
 
 export default function EventoPage() {
-  const searchParams = useSearchParams();
-
-  const success =
-    searchParams.get("success") === "true";
+ 
   return (
     <main>
-      {success && (
-  <div className="bg-green-50 border-b border-green-200">
-    <div className="mx-auto max-w-5xl px-6 py-6 text-center">
-      <div className="mb-2 text-4xl">
-        ✓
-      </div>
-
-      <h2 className="text-2xl font-semibold text-green-700">
-        Conferma ricevuta
-      </h2>
-
-      <p className="mt-2 text-gray-700">
-        Grazie per aver confermato la vostra partecipazione.
-      </p>
-
-      <p className="mt-1 text-gray-700">
-        Non vediamo l'ora di festeggiare insieme a voi.
-      </p>
-    </div>
-  </div>
-)}
+     
       <section className="bg-[#F8F5F0] px-6 py-20">
         <div className="mx-auto max-w-5xl text-center">
           <h1 className="font-title text-6xl">

@@ -151,8 +151,7 @@ const [loading, setLoading] = useState(false);
       setShowSuccess(true);
 
 setTimeout(() => {
-  window.location.href =
-    "/evento?success=true";
+ window.location.href = "/grazie";
 }, 3000);
     } catch (error) {
       console.error(error);
