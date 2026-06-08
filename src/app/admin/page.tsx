@@ -4,6 +4,8 @@ import AdminTable from "@/components/AdminTable";
 import AdminLogin from "@/components/AdminLogin";
 import { supabase } from "@/lib/supabase";
 
+export const dynamic = "force-dynamic";
+
 export default async function AdminPage() {
   const { data: responses } = await supabase
     .from("responses")
