@@ -62,7 +62,7 @@ export default async function AdminPage() {
     <AdminLogin>
       <main className="min-h-screen bg-[#F8F5F0] p-8">
         <h1 className="mb-8 text-center font-title text-5xl">
-          Dashboard Matrimonio
+          Dashboard Matrimonio TEST 123
         </h1>
 
        <div className="mb-8 flex justify-center gap-4">
