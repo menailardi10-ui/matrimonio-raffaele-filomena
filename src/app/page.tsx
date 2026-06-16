@@ -42,7 +42,7 @@ export default function Home() {
             <img
               src="/images/hero.jpeg"
               alt="Raffaele e Filomena"
-              className="h-60 w-full object-cover"
+              className="h-52 w-full object-cover"
             />
 
           </div>
@@ -64,12 +64,11 @@ export default function Home() {
 
           <p className="mx-auto max-w-xs text-[11px] leading-5 text-gray-700">
             Siamo felici di condividere con voi
-            il nostro giorno speciale.
-            <br />
-            <br />
-            Qui troverete tutte le informazioni
-            per vivere insieme a noi ogni momento
-            di questa giornata indimenticabile.
+il nostro giorno speciale.
+
+Qui troverete tutte le informazioni
+per vivere insieme a noi questo giorno
+indimenticabile.
           </p>
 
         </section>
@@ -81,7 +80,7 @@ export default function Home() {
             Conferma la tua presenza
           </h3>
 
-          <p className="mt-1 text-center text-xs text-gray-600">
+          <p className="mt-1 text-[10px] leading-tight text-center">
             entro il
             <span className="font-semibold text-[#0F6B6B]">
               {" "}31 Agosto 2026
