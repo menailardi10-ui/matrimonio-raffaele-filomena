@@ -1,42 +1,49 @@
 import MusicPlayer from "@/components/MusicPlayer";
-import Link from "next/link";
 
 export default function Home() {
   return (
-    <main>
-      <section className="relative h-screen overflow-hidden">
-        <img
-          src="/images/hero.jpeg"
-          alt="Raffaele e Filomena"
-          className="absolute inset-0 h-full w-full object-cover"
-        />
+    <main className="bg-[#F8F5F0]">
+      <section className="px-6 py-12">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid items-center gap-12 md:grid-cols-2">
+            {/* Testi */}
+            <div className="text-center md:text-left">
+              <img
+  src="/images/logo-rf.svg"
+  alt="Logo RF"
+  className="mx-auto mb-8 w-36 md:mx-0"
+/>
 
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60" />
+              <p className="mb-4 text-sm uppercase tracking-[0.4em] text-[#0F6B6B]">
+                24 Ottobre 2026
+              </p>
 
-       <div className="relative z-10 flex h-full animate-fadeUp flex-col items-center justify-center px-6 text-center text-white">
-          <p className="mb-4 text-sm uppercase tracking-[0.4em]">
-            24 Ottobre 2026
-          </p>
+              <h1 className="font-title text-6xl text-[#0F6B6B] md:text-8xl">
+                Raffaele
+                <br />
+                &
+                <br />
+                Filomena
+              </h1>
 
-          <h1 className="font-title text-6xl md:text-8xl">
-            Raffaele
-            <br />
-            &
-            <br />
-            Filomena
-          </h1>
+              <p className="mt-8 text-xl italic text-gray-600">
+                L'inizio di per sempre.
+              </p>
 
-          <p className="mt-8 max-w-md text-lg">
-            Ti aspettiamo
-          </p>
+              <div className="mt-8 flex justify-center md:justify-start">
+                <MusicPlayer />
+              </div>
+            </div>
 
-          <Link
-            href="/evento"
-            className="mt-10 rounded-full bg-[#0F6B6B] px-8 py-4 text-white"
-          >
-            Scopri di più
-          </Link>
-         <MusicPlayer />
+            {/* Foto */}
+            <div className="flex justify-center">
+              <img
+                src="/images/hero.jpeg"
+                alt="Raffaele e Filomena"
+                className="w-full max-w-md rounded-[3rem] object-cover shadow-2xl"
+              />
+            </div>
+          </div>
         </div>
       </section>
     </main>
