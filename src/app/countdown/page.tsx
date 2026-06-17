@@ -42,73 +42,73 @@ export default function CountdownPage() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-[#F8F5F0] px-6 py-10 pb-28">
+    <main className="min-h-screen bg-[#F8F5F0] px-5 py-6 pb-24">
       <div className="mx-auto max-w-md text-center">
 
-        <h1 className="font-title text-6xl text-[#0F6B6B]">
+        <h1 className="font-title text-4xl text-[#0F6B6B]">
           Countdown
         </h1>
 
-        <div className="my-4 flex items-center justify-center gap-2">
-          <div className="h-px w-12 bg-[#0F6B6B]/30" />
+        <div className="my-3 flex items-center justify-center gap-2">
+          <div className="h-px w-10 bg-[#0F6B6B]/30" />
           <span className="text-[#0F6B6B]">♡</span>
-          <div className="h-px w-12 bg-[#0F6B6B]/30" />
+          <div className="h-px w-10 bg-[#0F6B6B]/30" />
         </div>
 
-        <p className="mb-10 text-gray-600">
+        <p className="mb-6 text-sm text-gray-600">
           Ogni secondo ci avvicina al sì
         </p>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-3">
 
-          <div className="rounded-3xl bg-white p-6 shadow-md border border-[#0F6B6B]/10 ">
-            <p className="text-6xl font-bold text-[#0F6B6B]">
+          <div className="rounded-2xl bg-white p-4 shadow-md border border-[#0F6B6B]/10">
+            <p className="text-4xl font-bold text-[#0F6B6B]">
               {timeLeft.giorni}
             </p>
-            <p className="mt-2 text-sm uppercase tracking-wider text-gray-500">
+            <p className="mt-1 text-xs uppercase tracking-wider text-gray-500">
               Giorni
             </p>
           </div>
 
-          <div className="rounded-3xl bg-white p-6 shadow-md border border-[#0F6B6B]/10">
-            <p className="text-6xl font-bold text-[#0F6B6B]">
+          <div className="rounded-2xl bg-white p-4 shadow-md border border-[#0F6B6B]/10">
+            <p className="text-4xl font-bold text-[#0F6B6B]">
               {timeLeft.ore}
             </p>
-            <p className="mt-2 text-sm uppercase tracking-wider text-gray-500">
+            <p className="mt-1 text-xs uppercase tracking-wider text-gray-500">
               Ore
             </p>
           </div>
 
-          <div className="rounded-3xl bg-white p-6 shadow-md border border-[#0F6B6B]/10">
-            <p className="text-6xl font-bold text-[#0F6B6B]">
+          <div className="rounded-2xl bg-white p-4 shadow-md border border-[#0F6B6B]/10">
+            <p className="text-4xl font-bold text-[#0F6B6B]">
               {timeLeft.minuti}
             </p>
-            <p className="mt-2 text-sm uppercase tracking-wider text-gray-500">
+            <p className="mt-1 text-xs uppercase tracking-wider text-gray-500">
               Minuti
             </p>
           </div>
 
-          <div className="rounded-3xl bg-white p-6 shadow-md border border-[#0F6B6B]/10">
-            <p className="text-6xl font-bold text-[#0F6B6B]">
+          <div className="rounded-2xl bg-white p-4 shadow-md border border-[#0F6B6B]/10">
+            <p className="text-4xl font-bold text-[#0F6B6B]">
               {timeLeft.secondi}
             </p>
-            <p className="mt-2 text-sm uppercase tracking-wider text-gray-500">
+            <p className="mt-1 text-xs uppercase tracking-wider text-gray-500">
               Secondi
             </p>
           </div>
 
         </div>
 
-        <div className="mt-10">
-          <p className="font-title text-3xl text-[#0F6B6B]">
+        <div className="mt-6">
+          <p className="font-title text-2xl text-[#0F6B6B]">
             24 Ottobre 2026
           </p>
 
-          <p className="mt-4 font-title text-2xl text-[#0F6B6B]">
-  Raffaele & Filomena
-</p>
+          <p className="mt-2 font-title text-xl text-[#0F6B6B]">
+            Raffaele & Filomena
+          </p>
 
-          <p className="mt-2 text-gray-500 italic">
+          <p className="mt-2 text-sm italic text-gray-500">
             Non vediamo l'ora di festeggiare con voi.
           </p>
         </div>
