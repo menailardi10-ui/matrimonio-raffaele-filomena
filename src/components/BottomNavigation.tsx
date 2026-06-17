@@ -19,7 +19,7 @@ const items = [
   },
   {
     href: "/momenti",
-    label: "I nostri momenti",
+    label: "Momenti",
     icon: Camera,
   },
   {

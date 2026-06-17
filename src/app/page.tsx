@@ -62,14 +62,7 @@ export default function Home() {
             <div className="h-px w-12 bg-[#0F6B6B]/30" />
           </div>
 
-          <p className="mx-auto max-w-xs text-[11px] leading-5 text-gray-700">
-            Siamo felici di condividere con voi
-il nostro giorno speciale.
-
-Qui troverete tutte le informazioni
-per vivere insieme a noi questo giorno
-indimenticabile.
-          </p>
+          
 
         </section>
 
