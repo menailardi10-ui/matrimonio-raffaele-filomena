@@ -36,14 +36,8 @@ const [loading, setLoading] = useState(false);
   const nuovi = Array.from(
     { length: numero },
     (_, index) => ({
-      nome:
-        index === 0
-          ? nomeReferente
-          : "",
-      cognome:
-        index === 0
-          ? cognomeReferente
-          : "",
+      nome: index === 0 ? nomeReferente : "",
+      cognome: index === 0 ? cognomeReferente : "",
       fasciaEta: "",
       haAllergie: false,
       descrizioneAllergie: "",
@@ -184,7 +178,7 @@ alert(
 }
 
 return (
-    <div className="mx-auto max-w-3xl rounded-3xl bg-white p-8 shadow-xl">
+    <div className="mx-auto max-w-3xl rounded-3xl border border-[#0F6B6B]/10 bg-white p-6 shadow-md">
       {showSuccess && (
   <div className="mb-8 rounded-3xl border-2 border-[#0F6B6B] bg-[#F8F5F0] p-8 text-center shadow-lg">
     <div className="mb-4 text-5xl">
@@ -204,9 +198,36 @@ return (
     </p>
   </div>
 )}
-      <h2 className="mb-8 text-center font-title text-5xl">
-        Conferma la tua partecipazione
-      </h2>
+      <div className="mb-10 text-center">
+
+  <div className="mb-2 text-[#0F6B6B] text-xl">
+    ♡
+  </div>
+
+  <h2 className="font-title text-4xl text-[#0F6B6B]">
+    Conferma la tua presenza
+  </h2>
+
+  <div className="my-3 flex items-center justify-center gap-2">
+    <div className="h-px w-10 bg-[#0F6B6B]/30" />
+    <span className="text-[#0F6B6B]">♡</span>
+    <div className="h-px w-10 bg-[#0F6B6B]/30" />
+  </div>
+
+  <p className="text-sm text-gray-500">
+    Entro il
+    <span className="font-semibold text-[#0F6B6B]">
+      {" "}31 Agosto 2026
+    </span>
+  </p>
+
+  <p className="mt-4 text-sm leading-6 text-gray-600">
+    La vostra presenza renderà
+    <br />
+    ancora più speciale questo giorno.
+  </p>
+
+</div>
 
       <div className="space-y-6">
         <div>
@@ -306,31 +327,31 @@ return (
   type="text"
   placeholder="Nome"
   value={partecipante.nome}
-  readOnly={index === 0}
-                    onChange={(e) =>
-                      aggiornaPartecipante(
-                        index,
-                        "nome",
-                        e.target.value
-                      )
-                    }
-                    className="rounded-xl border p-3"
-                  />
+  onChange={(e) =>
+    aggiornaPartecipante(
+      index,
+      "nome",
+      e.target.value
+    )
+  }
+  className="rounded-xl border p-3"
+/>
+                  
 
                   <input
   type="text"
   placeholder="Cognome"
   value={partecipante.cognome}
-  readOnly={index === 0}
-                    onChange={(e) =>
-                      aggiornaPartecipante(
-                        index,
-                        "cognome",
-                        e.target.value
-                      )
-                    }
-                    className="rounded-xl border p-3"
-                  />
+  onChange={(e) =>
+    aggiornaPartecipante(
+      index,
+      "cognome",
+      e.target.value
+    )
+  }
+  className="rounded-xl border p-3"
+/>
+                   
 
                   <select
                     value={partecipante.fasciaEta}
