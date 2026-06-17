@@ -70,7 +70,7 @@ export default function BottomNavigation() {
                 strokeWidth={1.8}
               />
 
-              <span className="mt-1 text-[11px] text-center leading-tight">
+              <span className="mt-1 text-[8px] leading-tight text-center">
                 {item.label}
               </span>
             </Link>
