@@ -33,7 +33,7 @@ export default function MomentiPage() {
 
         <div className="mt-6 text-center">
           <p className="font-title text-2xl text-[#0F6B6B]">
-            Malta 2025
+            Malta 2026
           </p>
 
           <p className="mt-2 text-sm leading-6 text-gray-600">
